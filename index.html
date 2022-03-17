@@ -4,326 +4,294 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VasishthG - Home</title>
-    
+    <title>VasishthG - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<meta property="og:title" content="Vasishth Gupta" />
-    <meta property="og:url" content="https://vasishthg.github.io" />
-    <meta name="description" content="My Portfolio site :)">
-
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:image" content="https://vasishthg.github.io/images/logo3.png" />
-    <meta property="image" content="https://vasishthg.github.io/images/logo3.png" />
-
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 </head>
-
 <body>
-  <div id="particles-js" style="font-family: 'Montserrat', sans-serif; background:none;">
+  <div class="preloader" id="preloader">
+    <a href="/"><img class="preloaderimg" src="images/logo.svg"></a>
   </div>
-<div style="height: 100vh;margin-bottom: 1em;">
-    <nav id="header">
-        <br>
-        <br>
-        
-        <a href="/" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; display: inline;"><p class="logo" style="font-family: 'GothamBold'; color: white; display: inline; ">Vasis<span style='text-decoration:underline #597CE6 4px;text-underline-offset:0.2em;'>hthG</span></p></a>
-        <div style=" float: right; margin-right: 2rem;" class="hlinks">
-        <a href="/" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; display: inline;"><p class="links" style="font-family: 'GothamBook'; color: white; display: inline; vertical-align: middle; ">Home</p></a>
-        <a href="#aboutme" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; display: inline;"><p class="links" style="font-family: 'GothamBook'; color: white; display: inline; vertical-align: middle; ">About Me</p></a>
-        <a href="#skills" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; display: inline;"><p class="links" style="font-family: 'GothamBook'; color: white; display: inline; vertical-align: middle; ">Skills</p></a>
-        <a href="#stats" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; display: inline;"><p class="links" style="font-family: 'GothamBook'; color: white; display: inline; vertical-align: middle; ">Stats</p></a>
-        <a href="#projects" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; display: inline;"><p class="links" style="font-family: 'GothamBook'; color: white; display: inline; vertical-align: middle; ">Projects</p></a>
-        <a href="#contact" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; display: inline;"><p class="links" style="font-family: 'GothamBook'; color: white; display: inline; vertical-align: middle; ">Contact</p></a>
-        
-        </div>
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars fa-lg"></i></button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#aboutme" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; "><p class="links" style="font-family: 'GothamBook'; display: inline; vertical-align: middle;  color: white;">About</p></a>
-        <a href="#skills" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; "><p class="links" style="font-family: 'GothamBook';  display: inline; vertical-align: middle;  color: white;">Skills</p></a>
-        <a href="#stats" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; "><p class="links" style="font-family: 'GothamBook';  display: inline; vertical-align: middle;  color: white;">Stats</p></a>
-        <a href="#projects" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; "><p class="links" style="font-family: 'GothamBook';  display: inline; vertical-align: middle;  color: white;">Projects</p></a>
-        <a href="#contact" style="text-decoration: none; margin-left: 2em;font-size: 1.2em; "><p class="links" style="font-family: 'GothamBook'; display: inline; vertical-align: middle;  color: white;">Contact</p></a>
-          </div>
+    <a href="/"><img class="logo" src="images/logo.svg"></a>
+    <h2 class="vasishthg">VasishthG</h2>
+    <div class="sidenav">
+        <a href="/" class="sidenavlink"><p class="sidenavlinktxt">Home</p></a>
+        <a href="#aboutme" class="sidenavlink"><p class="sidenavlinktxt">About Me</p></a>
+        <a href="#skills" class="sidenavlink"><p class="sidenavlinktxt">Skills</p></a>
+        <a href="#stats" class="sidenavlink"><p class="sidenavlinktxt">Stats</p></a>
+        <a href="#projects" class="sidenavlink"><p class="sidenavlinktxt">Projects</p></a>
+        <a href="#" class="sidenavlink"><p class="sidenavlinktxt">Contact</p></a>
+        <a href="https://twitter.com/vasishthg"id="Contact"  target="_blank"  class="sidenavlink"><img class="sidenavicons" src="images/twitter.svg" style="margin-left:-0.2em;"></a>
+        <a href="https://discord.com/users/915138167764549703" target="_blank"  id="Contact"  class="sidenavlink"><img class="sidenavicons" src="images/discord.svg"></a>
+        <a href="mailto:vasishthg.dev@gmail.com" id="Contact" target="_blank"   class="sidenavlink"><img class="sidenavicons" src="images/gmail.svg"></a>
+        <a href="https://github.com/vasishthg" id="Contact"  target="_blank" class="sidenavlink"><img class="sidenavicons" src="images/github.svg"></a>
 
-    </nav>
-    <br>
-    <img src="/images/logo3.png" style="float: right; max-width: 20em; right: 5em;top: 33%;" class="lol">
-        <h1 class="Herointro" style="font-family: 'Montserrat', sans-serif;">Hello, I am <span id="typewriter">Vasishth</span></h1>
-        <h3 class="heroinfo">A web dev, Game dev, 3D Artist<br> and an Ethical Hacker</h3>
-        <a href="https://twitter.com/vasishthg"><i class="fab fa-twitter fa-lg iconlinks" style="max-width: 1.5em; margin-left: 2.6em;margin-top: 1em;"></i></a>
-        <a href="https://github.com/vasishthg"><i class="fab fa-github fa-lg iconlinks" style="max-width: 1.5em; margin-left: 2.3em;margin-top: 1em;"></i></a>
-        <a href="mailto:vasishthg.dev@gmail.com"><i class="fas fa-envelope fa-lg iconlinks" style="max-width: 1.5em; margin-left: 2.3em;margin-top: 1em;"></i></a>
-
-        
-</div>    
-<br> 
-<div class="aboutme" id="aboutme">
-  <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"  class="aboutmehead"></div>
-  <h3 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" style="color:white;font-family: 'Montserrat', sans-serif; margin-left: 2em;   ">About Me</h3>
-  <br><p class="aboutinfo"data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" >Hi! I am Vasishth. I am in high school and love to code and make cool things(Depends on how you find my stuff cool). I do Game dev, Web dev(As you can see), Ethical Hacking and 3D animations and designs. I also make designs in figma to make my websites. im not that pro in this stuff but im always looking forward to learn more stuff :) </p>
-</div>
-<br>
-<br>
-<br>
-<div class="skills" id="skills">
-  <center><h3 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" style="color:white;font-family: 'Montserrat', sans-serif; text-decoration: underline #597CE6 5px;font-size: 1.5em; text-underline-offset: 0.3em; margin-top: 7em;">Skills</h3></center>
-  
-    <div class="skillsinfo">
-      <div class="Langs">
-        <h3 class="langshead" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Languages</h3>
-        <div class="langsmain"data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-          <div class="lang" >
-            <img src="/images/skills/ardiuno.png" class="langimg">
-            <h5 class="langname" style="margin-left: 1em;">Ardiuno</h5>
-          </div>
-          <div class="lang">
-            <img src="/images/skills/csharp.png" class="langimg">
-            <h5 class="langname" style="margin-left: 1em;">C#</h5>
-          </div>
-          <div class="lang">
-            <img src="/images/skills/c++.png" class="langimg">
-            <h5 class="langname" style="margin-left: 1em;">C++</h5>
-          </div>
-          <div class="lang">
-            <img src="/images/skills/css.png" class="langimg">
-            <h5 class="langname" style="margin-left: 1em;">CSS</h5>
-          </div>
-          <div class="lang">
-            <img src="/images/skills/html.png" class="langimg">
-            <h5 class="langname" style="margin-left: 1em;">Html</h5>
-          </div>
-          <div class="lang">
-            <img src="/images/skills/js.png" class="langimg">
-            <h5 class="langname" style="margin-left: 1em;">JS</h5>
-          </div>
-          <div class="lang">
-            <img src="/images/skills/python.png" class="langimg">
-            <h5 class="langname" style="margin-left: 1em;">Python</h5>
-          </div>
-        </div>
-        <div class="Langs" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-          <h3 class="langshead" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Technologies</h3>
-          <div class="langsmain">
-            <div class="lang">
-              <img src="/images/skills/blender.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Blender  </h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/figma.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Figma</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/jquery.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">JQuery</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/mysql.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">MySQL</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/xamp.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Xampp</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/unreal.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Unreal Engine</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/unity.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Unity</h5>
-            </div>
-          </div>
-        </div>
-        <div class="Langs" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-          <h3 class="langshead" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Other</h3>
-          <div class="langsmain">
-            <div class="lang">
-              <img src="/images/skills/bash.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Bash</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/git.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Git</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/github.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Github</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/heroku.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Heroku CLI</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/netlify.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Netlify</h5>
-            </div>
-            <div class="lang">
-              <img src="/images/skills/kali.png" class="langimg">
-              <h5 class="langname" style="margin-left: 1em;">Kali Linux</h5>
-            </div>
-          </div>
-      </div>      
     </div>
-</div>
+   
+    <main>
+        <div class="main">
+           <center><h1 class="maintxt">I am a <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "Web Dev.", "Game Dev.", "Ethical Hacker.", "3D Artist." ]'></span></h1></center>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br> 
+           <br>
+           <br>
+           <br>
+           <br id="aboutme">
+            <h3 style="margin-left: 1em; text-decoration:underline white 5px;text-underline-offset: 0.3em;" >About Me</h3>
+            <br >
+            <p class="aboutme">Hi! I am Vasishth. I am in high school and love to code and make cool things(Depends on how you find stuff cool). I do Game dev, Web dev(As you can see), Ethical Hacking and 3D animations and designs. I also make designs in figma to make my websites. im not that pro in this stuff but im always looking forward to learn more stuff :)</p>
+            <br id="skills">
+            <div class="skills" >
+              <h3 style="margin-left: 1em; text-decoration:underline white 5px;text-underline-offset: 0.3em;">Skills</h3>
+<br>
 
-    <br>
-    <br>
-    <br>
-    <div class="stats" id="stats" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" > 
-      <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"  class="aboutmehead"></div>
-  <h3 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" style="color:white;font-family: 'Montserrat', sans-serif; margin-left: 2em;   ">Stats</h3>
-  <br>
-  <center>
-    <img src="https://github-readme-stats.vercel.app/api?username=vasishthg&show_icons=true&theme=github_dark" style="margin-left:4em;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vasishthg&layout=compact&card_width=250&langs_count=6&theme=github_dark " height="200rem" style="margin-left:3em;">
-  <br><br><img src="https://activity-graph.herokuapp.com/graph?username=vasishthg&theme=react-dark&hide_border=true&custom_title=">
-  </center>
-    </div>
- 
-    <br>
-    <br>
+              
+                <div class="skillsinfo">
+                  <div class="Langs">
+                    <h3 class="langshead" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Languages</h3>
+                    <div class="langsmain"data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                      <div class="lang" >
+                        <img src="/images/skills/ardiuno.png" class="langimg">
+                        <h5 class="langname" style="margin-left: 1em;">Ardiuno</h5>
+                      </div>
+                      <div class="lang">
+                        <img src="/images/skills/csharp.png" class="langimg">
+                        <h5 class="langname" style="margin-left: 1em;">C#</h5>
+                      </div>
+                      <div class="lang">
+                        <img src="/images/skills/c++.png" class="langimg">
+                        <h5 class="langname" style="margin-left: 1em;">C++</h5>
+                      </div>
+                      <div class="lang">
+                        <img src="/images/skills/css.png" class="langimg">
+                        <h5 class="langname" style="margin-left: 1em;">CSS</h5>
+                      </div>
+                      <div class="lang">
+                        <img src="/images/skills/html.png" class="langimg">
+                        <h5 class="langname" style="margin-left: 1em;">Html</h5>
+                      </div>
+                      <div class="lang">
+                        <img src="/images/skills/js.png" class="langimg">
+                        <h5 class="langname" style="margin-left: 1em;">JS</h5>
+                      </div>
+                      <div class="lang">
+                        <img src="/images/skills/python.png" class="langimg">
+                        <h5 class="langname" style="margin-left: 1em;">Python</h5>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="Langs" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                      <h3 class="langshead" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Technologies</h3>
+                      <div class="langsmain">
+                        <div class="lang">
+                          <img src="/images/skills/blender.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Blender  </h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/figma.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Figma</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/jquery.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">JQuery</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/mysql.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">MySQL</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/xamp.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Xampp</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/unreal.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Unreal Engine</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/unity.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Unity</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
 
-<div class="Projects" id="projects">
-  <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"  class="aboutmehead"></div>
-  <h3 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" style="color:white;font-family: 'Montserrat', sans-serif; margin-left: 2em;   ">Projects</h3>
-  <br>
-  <br>
-  <div class="projmain">
-    <center>
-      <h3 data-aos="fade-up" style="color: white; font-family: 'Montserrat', sans-serif; float: right; margin-right: 7em;">Frontend Website for Technophilia 2.0.<br> Topic - Gaming Store</h3>
-      
-      <img data-aos="fade-up" class="mySlides" src="images/projects/technophilia.png" style="max-width:50em; border-radius:10px;">
-      <img data-aos="fade-up" class="mySlides" src="images/projects/technophilia2.png" style="max-width:50em; border-radius:10px;">
-      <img data-aos="fade-up" class="mySlides" src="images/projects/technophilia3.png" style="max-width:50em; border-radius:10px;">
-      <img data-aos="fade-up" class="mySlides" src="images/projects/technophilia4.png" style="max-width:50em; border-radius:10px;"> 
-      <br>
-      <button class="slider-btn" onclick="plusDivs(-1)">&#10094;</button>
-<button class="slider-btn" onclick="plusDivs(+1)">&#10095;</button>
+                    <div class="Langs" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                      <h3 class="langshead" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Other</h3>
+                      <div class="langsmain">
+                        <div class="lang">
+                          <img src="/images/skills/bash.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Bash</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/git.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Git</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/github.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Github</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/heroku.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Heroku CLI</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/netlify.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Netlify</h5>
+                        </div>
+                        <div class="lang">
+                          <img src="/images/skills/kali.png" class="langimg">
+                          <h5 class="langname" style="margin-left: 1em;">Kali Linux</h5>
+                        </div>
+                      </div>
+                  </div>      
+                </div>
+            </div>
+        </div>
+        <br id="stats">
+        <h3 style="margin-left: 1em; text-decoration:underline white 5px;text-underline-offset: 0.3em;">Stats</h3>
+        <br>  
+        <center>
+        <marquee width="700px">
+          <embed src="https://github-readme-stats.vercel.app/api?username=vasishthg&amp;show_icons=false&amp;theme=dark" style=" color: white; fill: white;">
+            <embed src="https://github-readme-stats.vercel.app/api/top-langs/?username=vasishthg&amp;layout=compact&amp;card_width=300&amp;langs_count=6&amp;theme=dark " height="200rem" style="margin-left:3em;">
+      </marquee>
     </center>
-    <br>
-    <br>
-    <br>
-    <center>
-      <h3 data-aos="fade-up" style="color: white; font-family: 'Montserrat', sans-serif; float: right; margin-right: 7em;">Website For nCrypt Interschool 22 by &ThickSpace;&ThickSpace;<br>DPS Sushant Lok.</h3>
-      
-      <img data-aos="fade-up" src="images/projects/ncrypt1.png" style="max-width:50em; border-radius:10px;">
-      <br>
-     
-    </center>
+    <br id="projects">
+    <h3 style="margin-left: 1em; text-decoration:underline white 5px;text-underline-offset: 0.3em;">Projects</h3>
+
 <br>
-<br>
-<br>
-<!-- <center>
-  <h3 data-aos="fade-up" style="color: white; font-family: 'Montserrat', sans-serif; float: right; margin-right: 7em;">Pixels OS | A debian based linux distro.<br><span style="font-size: 0.8em; color: grey;">(Website credits: Bootstrapmade.com)</span></h3>
-  
-  <img data-aos="fade-up" src="images/projects/pixelsos.png" style="max-width:50em; border-radius:10px;">
-  <br>
- 
-</center>
-<br>
-<br>
-<br> -->
 <center>
-  <h3 style="color: white; font-family: 'Montserrat', sans-serif; float: right; margin-right: 7em;">Full Website For GD Goenka Techfest.&ThickSpace;</h3>
-  
-  <img src="images/projects/metset.png" style="max-width:50em; border-radius:10px;">
-  <br>
- 
+    <div class="project">
+      <div>
+        <img src="images/projects/technophilia2.png" style="max-width:30em;" class="projectimg">
+      </div>
+      <h4 class="projecttitle">Technophillia 2.0</h4>
+      <br>      <br> <br>
+      <p class="projectdesc">Frontend Website for an interschool competition - Technophillia 2.0, The topic was a gaming store eg. Steam <br><br><a style="color: white; float: right; margin-right: 1em;" href="https://technophillia.github.io" target="_blank">Visit.</a></p>
+    </div>
+
+    <div class="project">
+      <div>
+        <img src="images/projects/serene.png" style="max-width:30em;" class="projectimg">
+      </div>
+      <h4 class="projecttitle">Serene Beta</h4>
+      <br>      <br> <br>
+      <p class="projectdesc">Beta game I made with Unreal Engine. Planning to make new maps and multiplayer. Stay Tuned :) <br><br><a style="color: white; float: right; margin-right: 1em;" href="https://pixelsatomic.github.io/" target="_blank">Visit.</a></p>
+    </div>
+    <div class="project">
+      <div>
+        <img src="images/projects/triplex.png" style="max-width:30em;" class="projectimg">
+      </div>
+      <h4 class="projecttitle">TripleX - Pure CSS Game</h4>
+      <br>      <br> <br>
+      <p class="projectdesc">A pure C++ math based game in which you have to guess the correct code to procede to the next level. <br><br><a style="color: white; float: right; margin-right: 1em;" href="https://github.com/vasishthg/Triplex-Game" target="_blank">Visit.</a></p>
+    </div>
+<br>
+<br>
+     <div class="project">
+      <div>
+        <img src="images/projects/ncrypt1.png" style="max-width:30em;" class="projectimg">
+      </div>
+      <h4 class="projecttitle">nCrypt Inter 2022</h4>
+      <br>      <br> <br>
+      <p class="projectdesc">Website for an interschool competition hosted by my school. </p>
+    </div>
+    <div class="project">
+      <div>
+        <img src="images/projects/vasishthg.png" style="max-width:30em;" class="projectimg">
+      </div>
+      <h4 class="projecttitle">Portfolios</h4>
+      <br>      <br> <br>
+      <p class="projectdesc">VasishthG Portfolios, it includes this site and the old version. <br><br><a style="color: white; float: right; margin-right: 1em;" href="/old/" target="_blank">Old.</a></p>
+    </div>
+    <div class="project">
+      <div>
+        <img src="images/projects/metset.png" style="max-width:30em;" class="projectimg">
+      </div>
+      <h4 class="projecttitle">Metset</h4>
+      <br>      <br> <br>
+      <p class="projectdesc">Full Stack Website for an interschool competition which sold headsets for the metaverse</p>
+    </div>
 </center>
 <br>
 <br>
+<hr>
 <br>
+<center><a href="/"><img style="max-width: 2em;" src="images/logo.svg"></a></center>
 
-  </div>
-</div>
-<br>
-<br>
-<div class="Contact" id="contact">
-  <p style="color: white;font-family: 'GothamBold'; margin-left: 9.6em; font-size: 1.2em;">If you wanna ask something, or just wanna say hi you can email me at <a style="color: #799afa;" href="mailto:vasishthg.dev@gmail.com" class="email">vasishthg.dev@gmail.com</a></p>
-  <center>
-    <br>
-    <br>
-    <br>
-    <footer>
-      <a href="https://discord.com/users/915138167764549703" style="color: #5865F2;"><i class="fab fa-discord fa-2x"></i></a>
-      <a href="https://twitter.com/vasishthg" style="color: #1DA1F2;"><i class="fab fa-twitter fa-2x" style="margin-left:2em"></i></a>
-      <a href="mailto:vasishthg.dev@gmail.com" style="color: #BB001B;"><i class="fas fa-envelope fa-2x" style="margin-left:2em"></i></a>
-    </footer>
-  </center>
-</div>
-
+    </main>
 </body>
 </html>
-<script src="particles.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
 <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-</script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script>
-  var slideIndex = 1;
-showDivs(slideIndex);
+ var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-console.log('Triplex Game Update Pending')
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("header");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
-    header.classList.remove("sticky");
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
-}
-</script>
-<script src="service-worker.js"></script>
-<script>
-    window.addEventListener("load", () => {
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js");
-  }
-});
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 230 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
-}
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};   
+
+var delaylol = 1500
+    $(window).onload= setTimeout(function(){
+    $("#preloader").fadeOut(500);
+}, delaylol);
 </script>

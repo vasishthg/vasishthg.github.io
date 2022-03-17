@@ -1,224 +1,119 @@
-@font-face {
-    font-family: 'GothamBook';
-    src: url(/fonts/GothamBook.ttf);
-}
-@font-face {
-    font-family: 'GothamMedium';
-    src: url(/fonts/GothamMedium.ttf);
-}
-@font-face {
-    font-family: 'GothamLight';
-    src: url(/fonts/GothamLight.ttf);
-}
-@font-face {
-    font-family: 'GothamBold';
-    src: url(/fonts/GothamBold.ttf);
-}
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  color: white;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
-body{
-    background: #0B0E11;
-    margin: 0;
-    overflow-x: hidden;
-    width: 100%;
+.vasishthg{
+  font-weight: bold;
+  float: right;
+  margin-right: 1em;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(180, 191, 241, 0.38) 100%);
+    margin-left: 0.8em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  margin-top: 2em;
 }
-
+.logo{
+  max-width: 2em;
+  margin-left: 1em;
+  margin-top: 1em;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  animation: logoanim 3s infinite;
+}
+.sidenav{
+  width: 20%;
+  height: 100%;
+  margin-top: 8em;
+  overflow: none;
+  margin-left: 1.5em;
+  margin-right: 0;
+}
+.sidenavlink{
+  font-size: 1.2em;
+  line-height: 2.5em;
+  color: white;
+  text-decoration: none;
+  font-weight:400;
+}
+main{
+  background: rgba(255, 255, 255, 0.12);
+  float: right;
+  overflow:scroll;
+  overflow-x: hidden;
+  right:1em;
+  width: 80%;
+  padding:1em 1em 1em 1em;
+  position: absolute;
+  top: 7em;
+  border-radius: calc(37px/2);
+  max-height: 75%;
+  scroll-behavior: smooth;
+}
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #242424;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+  border-radius: 10em;
+  width: 10px; 
+}
 
-    
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(61, 61, 62, 0.7) 100%);
-border-radius: 11px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    
-background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(117, 117, 117, 0) 100%);
-border-radius: 11px;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10em;
+  background: none;
+}
 
-  .logo{
-    animation: blurreverse 1.3s 1;
-    animation-fill-mode: forwards;
-  }
-  @keyframes blurreverse {
-    0%{
-      filter: brightness(50%);
-    }
-    100%{
-      filter: brightness(100%);
-    }
-  }
-  .logo:hover{
-    animation: blurr 1.3s 1;
-    animation-fill-mode: forwards;
-  }
-  @keyframes blurr {
-    0%{
-      filter: brightness(100%);
-    }
-    100%{
-      filter: brightness(50%);
-    }
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10em;
+  background: rgba(255, 255, 255, 0.575);
+}
 
-.Herointro{
-  font-size: 72px;
-  background: linear-gradient(90deg, #86FDE8 0%, rgba(180, 191, 241, 0.9) 50%);
-  margin-left: 0.8em;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 60px;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.178);
+  border-radius: 10em;
+}
+.sidenavicons{
+  max-width: 1.1em;
+  margin-left: 1.5em;
   margin-top: 5em;
-  padding: none;
-  margin-block-end: 0;
-}
-.heroinfo{
-  color: #BDBDBD;
-  margin-left: 1.7em;
-  font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-  font-size: 30px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-canvas {
-  display:block;
-  position: fixed;
-  z-index: -1;
-}
-#typewriter{
-  color: #fff;
-  border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  animation: 
-    typing 10.5s steps(100, end),
-    blink-caret 1s step-end infinite;
+  animation: sidenaviconrev 1s 1;
+  animation-fill-mode: forwards;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(255, 255, 255) }
-}
-.lol{
-  animation: driprev 1s 1;
-  animation-fill-mode: forwards;
-  position: absolute; 
-}
-.lol:hover{
-  animation: drip 1s 1;
-  animation-fill-mode: forwards;
-}
-@keyframes drip {
-  0%{
-    filter: drop-shadow();
-  }
-  100%{
-    filter: drop-shadow(0 0 0.5rem rgb(144, 245, 223));
-  }
-}
-@keyframes driprev {
-  100%{
-    filter: drop-shadow();
-  }
-  0%{
-    filter: drop-shadow(0 0 0.5rem rgb(144, 245, 223));
-  }
-}
-.links:hover{
-  text-decoration: underline #597CE6 4px;
-  text-underline-offset: 0.3em;
-}
-.afterhero{
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-}
-.iconlinks{
-  animation: changecolorev 0.5s 1;
-  animation-fill-mode: forwards;
-  color: #597CE6;
-}
-.iconlinks:hover{
-  animation: changecolor 0.5s 1;
-  animation-fill-mode: forwards;
-}
-@keyframes changecolor {
-  0%{
-    color: #597CE6;
-  }
-  100%{
-    color: #ffffff;
-  }
-}
-@keyframes changecolorev {
-  0%{
-    color: #ffffff;
-  }
-  100%{
-    color: #597CE6;
-  }
-}
-.aboutinfo{
-  color: white;
-  font-family: 'GothamBook';
-  line-height: 2em;
-  margin-left: 7em;
+.maintxt{
   font-weight: 100;
-  font-size: 1.2em;
-  margin-right: 7em;
-  float: left;
+  font-size: 3em;
+  margin-top: 20%;
 }
-.aboutmehead{
-  width: 12rem;
-    height: 5px;
-    background: linear-gradient(
-134deg
-, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%) 0% 0% repeat scroll rgba(0, 0, 0, 0);
-    margin-bottom: 15px;
-     margin-left: 2em;
+
+.anim{
+  animation: mainanim 1s 1;
 }
+
+.aboutme{
+  margin-left: 3em;
+  line-height: 2em;
+  color: rgb(219, 219, 219);
+}
+
 .skillsinfo{
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 3em;
   max-width: 800px;
   z-index: 1;
   position: relative;
   -webkit-box-flex: 1;
   flex-grow: 1;
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: white;  
 }
 
-.langs{
-  flex: 1 1 0%;
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
-  gap: 1rem;
-  -webkit-box-align: center;
-  align-items: center;
-}
+
 .langsmain{
   display: flex;
     -webkit-box-align: stretch;
@@ -226,15 +121,15 @@ canvas {
     justify-content: stretch;
     width: 100%;
     gap: 1rem;
-
 }
+
 
 .langshead{
-  font-weight: 800;
-  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 1em;
 }
 .lang{
-  background-color: rgb(36, 44, 55);
+  background-color: rgb(39, 39, 39);
     width: 25%;
     height: 2rem;
     border-radius: 0.5rem;
@@ -243,14 +138,87 @@ canvas {
     -webkit-box-align: center;
     align-items: center;
     cursor: pointer;
-    margin-top: 1em;
     animation: glowrev 0.5s 1;
     animation-fill-mode:forwards;
 }
+
 .lang:hover{
 animation: glow 0.5s 1;
 animation-fill-mode:forwards;
 } 
+
+.langimg{
+  max-width: 1.8em;
+}
+.langname{
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.project{
+  background: rgb(46, 46, 46);
+  width: 350px;
+  height: 400px;
+  border-radius: 1em;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+.projectimg{
+  border-radius: 0.3em;
+  margin-top: 1em;
+  pointer-events: none;
+  height: 160px;
+}
+
+.projecttitle{
+  color: white;
+  float: left;
+  text-decoration: underline 3px white;
+  margin-left: 1em;
+}
+.projectdesc{
+  color:rgb(206, 206, 206);
+  float: left;
+  text-align: left;
+  margin-left: 1em;
+  margin-right: 0.2em;
+}
+
+/* Animations */
+      /* Sidenav Icon Animation */
+.sidenavicons:hover{
+  animation: sidenavicon 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes sidenavicon{
+  from{
+    filter:brightness(100%);
+  }
+  to{
+    filter: brightness(70%);
+  }
+}
+@keyframes sidenaviconrev{
+  from{
+    filter: brightness(70%);
+  }
+  to{
+    filter: brightness(100%);
+  }
+}
+    /* logo animation */
+@keyframes logoanim{
+  0%{
+    filter: drop-shadow(0 0 0.75rem white);
+  }
+  50%{
+    filter: drop-shadow(0 0 0.5rem white);
+  }
+  100%{
+    filter: drop-shadow(0 0 0.75rem white);
+  }
+}
 @keyframes glow {
   0%{
     filter: drop-shadow();
@@ -267,88 +235,33 @@ animation-fill-mode:forwards;
     filter: drop-shadow();
   }
 }
-.langimg{
-  max-width: 1.8em;
-}
-.langname{
-  font-size: 0.9em;
-  font-weight: 500;
-}
-.line{
-  -webkit-box-flex: initial;
-    flex-grow: initial;
-    width: 0.1rem;
-    display: flex;
-    background-color: rgb(178, 189, 205);
-}
-.slider-btn{
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  
-}
-.email{
-  text-decoration: none;
-}
-.email:hover{
-  text-decoration: #597CE6 3px underline;
-   text-underline-offset: 0.3em;
-}
-/* footer */
-footer{
-  width: 30%;
-  padding-top: 1.5em;
-  padding-bottom: 1em;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  background-color: none;
-}
-.dropbtn {
-  background: none;
-  border-radius: 1em;
-  padding: 16px;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: rgba(0, 0, 0, 0.521);
-}
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  display: none;
-   float: right;
+/* Preloader */
+.preloader{
+  font-size: 7em;
+  text-align: center;
+  animation-fill-mode: forwards;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: fixed;
+  margin:auto;
+  opacity: 1;
+  background: black;
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #000000;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.preloaderimg{
+  margin-top: 20%;
+  animation: preloader 1.5s 1;
 }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+@keyframes preloader {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-.hlinks{
-  display: inline;
-}
-/* responsive */
