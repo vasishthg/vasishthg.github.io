@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  color: white;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.vasishthg{
+  font-weight: bold;
+  float: right;
+  margin-right: 1em;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(180, 191, 241, 0.38) 100%);
+    margin-left: 0.8em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  margin-top: 2em;
+}
+.logo{
+  max-width: 2em;
+  margin-left: 1em;
+  margin-top: 1em;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  animation: logoanim 3s infinite;
+}
+.sidenav{
+  width: 20%;
+  height: 100%;
+  margin-top: 8em;
+  overflow: none;
+  margin-left: 1.5em;
+  margin-right: 0;
+}
+.sidenavlink{
+  font-size: 1.2em;
+  line-height: 2.5em;
+  color: white;
+  text-decoration: none;
+  font-weight:400;
+}
+main{
+  background: rgba(255, 255, 255, 0.12);
+  float: right;
+  overflow:scroll;
+  overflow-x: hidden;
+  right:1em;
+  width: 80%;
+  padding:1em 1em 1em 1em;
+  position: absolute;
+  top: 7em;
+  border-radius: calc(37px/2);
+  max-height: 75%;
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  border-radius: 10em;
+  width: 10px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10em;
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10em;
+  background: rgba(255, 255, 255, 0.575);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.178);
+  border-radius: 10em;
+}
+.sidenavicons{
+  max-width: 1.1em;
+  margin-left: 1.5em;
+  margin-top: 5em;
+  animation: sidenaviconrev 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.maintxt{
+  font-weight: 100;
+  font-size: 3em;
+  margin-top: 20%;
+}
+
+.anim{
+  animation: mainanim 1s 1;
+}
+
+.aboutme{
+  margin-left: 3em;
+  line-height: 2em;
+  color: rgb(219, 219, 219);
+}
+
+.skillsinfo{
+  margin-left: 3em;
+  max-width: 800px;
+  z-index: 1;
+  position: relative;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  font-family: 'Montserrat', sans-serif;
+  color: white;  
+}
+
+
+.langsmain{
+  display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+.langshead{
+  font-weight: 400;
+  font-size: 1em;
+}
+.lang{
+  background-color: rgb(39, 39, 39);
+    width: 25%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 0.6rem;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    animation: glowrev 0.5s 1;
+    animation-fill-mode:forwards;
+}
+
+.lang:hover{
+animation: glow 0.5s 1;
+animation-fill-mode:forwards;
+} 
+
+.langimg{
+  max-width: 1.8em;
+}
+.langname{
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.project{
+  background: rgb(46, 46, 46);
+  width: 350px;
+  height: 400px;
+  border-radius: 1em;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+.projectimg{
+  border-radius: 0.3em;
+  margin-top: 1em;
+  pointer-events: none;
+  height: 160px;
+}
+
+.projecttitle{
+  color: white;
+  float: left;
+  text-decoration: underline 3px white;
+  margin-left: 1em;
+}
+.projectdesc{
+  color:rgb(206, 206, 206);
+  float: left;
+  text-align: left;
+  margin-left: 1em;
+  margin-right: 0.2em;
+}
+
+/* Animations */
+      /* Sidenav Icon Animation */
+.sidenavicons:hover{
+  animation: sidenavicon 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes sidenavicon{
+  from{
+    filter:brightness(100%);
+  }
+  to{
+    filter: brightness(70%);
+  }
+}
+@keyframes sidenaviconrev{
+  from{
+    filter: brightness(70%);
+  }
+  to{
+    filter: brightness(100%);
+  }
+}
+    /* logo animation */
+@keyframes logoanim{
+  0%{
+    filter: drop-shadow(0 0 0.75rem white);
+  }
+  50%{
+    filter: drop-shadow(0 0 0.5rem white);
+  }
+  100%{
+    filter: drop-shadow(0 0 0.75rem white);
+  }
+}
+@keyframes glow {
+  0%{
+    filter: drop-shadow();
+  }
+  100%{
+    filter: drop-shadow(0 0 0.1rem rgb(161, 161, 161));
+  }
+}
+@keyframes glowrev {
+  0%{
+    filter: drop-shadow(0 0 0.1rem rgb(161,161,161));
+  }
+  100%{
+    filter: drop-shadow();
+  }
+}
+
+
+/* Preloader */
+.preloader{
+  font-size: 7em;
+  text-align: center;
+  animation-fill-mode: forwards;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: fixed;
+  margin:auto;
+  opacity: 1;
+  background: black;
+}
+.preloaderimg{
+  margin-top: 20%;
+  animation: preloader 1.5s 1;
+}
+@keyframes preloader {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
