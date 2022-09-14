@@ -54,12 +54,10 @@ body{
     height: 97vh;
     overflow: auto;
     background-size: 100%;
-    overflow-x: hidden;
 }
 
 html{
     min-height: 100%;
-    overflow-x: hidden;
     overflow: auto;
 }
 
@@ -67,7 +65,6 @@ html{
     scroll-behavior: smooth;
     outline: none;
     overflow-anchor: none;
-    overflow-x: hidden;
 }
 
 .nav{
@@ -257,7 +254,7 @@ main{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 13em;
+    left: 10em;
     right: 0;
 }
 
@@ -265,6 +262,7 @@ main{
     letter-spacing: 0.05em;
     font-size: 2.2em;
     font-family: 'drukwide';
+    padding-left: 2em;
 }
 
 #heycircle{
@@ -277,12 +275,15 @@ main{
     margin-top: -1.5em;
     font-family: 'Lato';
     letter-spacing: 0.16em;
+    padding-left: 3em;
     margin-left: 2em;
     font-weight: 500;
 }
 
 .home-contactbtns{
     margin-left: -2em;
+    padding-left: 4em;
+    padding-bottom: 4em;
     margin-top: 1.5em;
 }
 
@@ -503,9 +504,9 @@ main{
     top: 0;
     padding-top: 3.5em;
     right: 0;
-    /* display: none; */
+    display: none;
     /* height: fit-content; */
-    background: linear-gradient(90deg, #000000 50%, #f3f3f3 50%);
+    background-color: #f3f3f3;
     bottom: 0;
 }
 
@@ -516,4 +517,55 @@ main{
     color: #757575;
     letter-spacing: 0.115em;
     font-family: 'Lato';
+}
+
+
+.contact-contactbtns{
+    position: absolute;
+    bottom: 6em;
+    left: 3em;
+}
+
+.contact-contactbtn{
+    background-color: white;
+    width: fit-content;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1.5em;
+    animation: csmootherev 0.25s 1 forwards;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border-radius: 1em;
+    filter: drop-shadow(0px 32px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 18px 11px rgba(0, 0, 0, 0.04)) drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.06)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.07)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.07));
+}
+
+.contact-contactbtn:hover{
+    animation: csmoothe 0.5s 1 forwards;
+}
+
+
+.contactmain{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5.5em;
+    text-align: right;
+}
+
+#contact-getintouch{
+    font-size: 6em;
+    letter-spacing: 0.125em;
+    margin-block-end: 0;
+    font-weight: 700;
+    z-index: 1000;
+    color: black;
+    font-family: 'Lato';
+    mix-blend-mode: difference;
+}
+
+#contactimg{
+    position: absolute;
+    max-width: 40em;
+    pointer-events: none;
+    user-select: none;
+    bottom: 0;
 }

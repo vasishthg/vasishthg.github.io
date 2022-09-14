@@ -57,3 +57,10 @@ $(".to-contact").click(function(){
   $(".contact").show("slide", {direction: "up"}, 1000)
   $(".forte").hide("slide", {direction: "left"}, 1000)
 })
+
+$(".to-home").click(function(){
+  header.innerHTML = "VasishthG - Forté";
+  $(".contact").hide("slide", {direction: "up"}, 1000)
+  $(".forte").hide("slide", {direction: "left"}, 1000)
+})
+
