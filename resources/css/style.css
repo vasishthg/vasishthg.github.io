@@ -505,7 +505,7 @@ main{
     padding-top: 3.5em;
     right: 0;
     display: none;
-    /* height: fit-content; */
+    height: fit-content;
     background-color: #f3f3f3;
     bottom: 0;
 }
@@ -568,4 +568,116 @@ main{
     pointer-events: none;
     user-select: none;
     bottom: 0;
+}
+
+.works{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 3.5em;
+    right: 0;
+    /* display: none; */
+    /* height: fit-content; */
+    background-color: #f3f3f3;
+    bottom: 0;
+}
+
+#works-title{
+    rotate: 90deg;
+    position: absolute;
+    top: 54%;
+    color: #D1D1D1;
+    font-size: 3.5em;
+    font-family: 'drukwide';
+    right: -2.5em;
+    margin-block-start: 0;
+    line-height: 0;
+}
+
+.works-main{
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    max-height: 28em;
+    height: 28em;
+    border-radius: 1em;
+    overflow-y: auto;
+    width: 60em;
+    position: absolute;
+    margin: -12em 0 0 -33em;
+}
+
+.works-work{
+    margin-left: 5em;
+    margin-right: 5em;
+    width: 48em;
+    padding: 1.5em 1em 1.5em 1em;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+    height: 9em;
+    background-color: #111111;
+    animation: mehrev 0.5s 1 forwards;
+}
+
+.works-work:hover{
+    animation: meh 0.5s 1 forwards;
+}
+
+@keyframes meh {
+    100%{
+        border-radius: 1em;
+        box-shadow: 0px 33px 13px rgba(0, 0, 0, 0.02), 0px 19px 11px rgba(0, 0, 0, 0.08), 0px 8px 8px rgba(0, 0, 0, 0.13), 0px 2px 5px rgba(0, 0, 0, 0.15), 0px 0px 0px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@keyframes mehrev {
+    0%{
+        border-radius: 1em;
+        box-shadow: 0px 33px 13px rgba(0, 0, 0, 0.02), 0px 19px 11px rgba(0, 0, 0, 0.08), 0px 8px 8px rgba(0, 0, 0, 0.13), 0px 2px 5px rgba(0, 0, 0, 0.15), 0px 0px 0px rgba(0, 0, 0, 0.15);
+    }
+    100%{
+        border-radius: 0.5em;
+        box-shadow: none;
+    }
+}
+
+.works-img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.works-work-title{
+    display: inline-block;
+    margin-left: 1em;
+    font-family: 'gilroy-700';
+    color: white;
+    letter-spacing: 0.085em;
+    vertical-align: top;
+}
+
+.works-desc{
+    vertical-align: middle;
+    display: inline-block;
+    width: 50%;
+    margin-top: 2em;
+    margin-left: -8.3em;
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 19px;
+    letter-spacing: 0.085em;
+    color: white;
+}
+
+.works-year{
+    color: transparent;
+    fill: none;
+    rotate: -90deg;
+    position:absolute;
+    font-size: 1.3em;
+    top: 5.25em;
+    right: 3em;
+    letter-spacing: 0.2em;
+    font-family: 'drukwide';
+    -webkit-text-stroke: 0.7px rgb(255, 255, 255);
 }
