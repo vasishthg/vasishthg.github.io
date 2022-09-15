@@ -681,3 +681,30 @@ main{
     font-family: 'drukwide';
     -webkit-text-stroke: 0.7px rgb(255, 255, 255);
 }
+
+
+@media screen and (max-width:1046px) {
+    #home-aboutme{
+        position: static;
+        float: none;
+        margin-block-end: -2em;
+        margin-left: 3em;
+        margin-top: 3em;
+        width: 31em;
+    }
+    .vasishthg-bg{
+        font-size: 10em;
+    }    
+}
+
+@media screen and (max-width: 863px) {
+    .vasishthg-bg{
+        font-size: 8em;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .vasishthg-bg{
+        display: none;
+    }
+}

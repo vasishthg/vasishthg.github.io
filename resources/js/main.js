@@ -49,18 +49,29 @@ var header = document.querySelector("title")
 $(".to-forte").click(function(){
   header.innerHTML = "VasishthG - Forté";
   $(".forte").show("slide", {direction: "up"}, 1000)
+  $(".works").hide("slide", {direction: "left"}, 1000)
   $(".contact").hide("slide", {direction: "right"}, 1000)
 })
 
 $(".to-contact").click(function(){
-  header.innerHTML = "VasishthG - Forté";
+  header.innerHTML = "VasishthG - Contact";
   $(".contact").show("slide", {direction: "up"}, 1000)
+  $(".works").hide("slide", {direction: "left"}, 1000)
   $(".forte").hide("slide", {direction: "left"}, 1000)
 })
 
 $(".to-home").click(function(){
-  header.innerHTML = "VasishthG - Forté";
+  header.innerHTML = "VasishthG";
   $(".contact").hide("slide", {direction: "up"}, 1000)
   $(".forte").hide("slide", {direction: "left"}, 1000)
+  $(".works").hide("slide", {direction: "left"}, 1000)
 })
+
+$(".to-works").click(function(){
+  header.innerHTML = "VasishthG- Works";
+  $(".contact").hide("slide", {direction: "up"}, 1000)
+  $(".forte").hide("slide", {direction: "left"}, 1000)
+  $(".works").show("slide", {direction: "right"}, 1000)
+})
+
 
