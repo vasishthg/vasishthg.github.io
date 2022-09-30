@@ -573,7 +573,7 @@ main{
     bottom: 0;
 }
 
-.works{
+/* .works{
     width: 100%;
     position: absolute;
     left: 0;
@@ -581,7 +581,7 @@ main{
     padding-top: 3.5em;
     right: 0;
     display: none;
-    /* height: fit-content; */
+    height: fit-content;
     background-color: #f3f3f3;
     bottom: 0;
 }
@@ -685,22 +685,8 @@ main{
     margin-top: -2.8em;
     font-family: 'drukwide';
     -webkit-text-stroke: 0.7px rgb(255, 255, 255);
-}
+} */
 
-/* 
-
-
-#home-aboutme{
-    width: 31em;   
-    line-height: 1.3em;
-    float: right;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: 3em;
-}
- */
 
 
 @media screen and (max-width:1044px) {
