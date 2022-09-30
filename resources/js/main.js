@@ -89,3 +89,15 @@ function closemobnav(){
       mentxt.innerHTML = "Menu";
       $(".mobile-nav").slideUp(700);
 }
+
+$(".to-discord").click(function(){
+  window.open("https://discord.com/users/915138167764549703")
+})
+
+$(".to-mail").click(function(){
+  window.open("mailto:vasishthg.dev@gmail.com")
+})
+
+$(".to-github").click(function(){
+  window.open("https://github.com/vasishthg")
+})
