@@ -155,7 +155,7 @@ html{
 
   
 *{
-    /* cursor: none !important; */
+    cursor: none !important;
     overflow-anchor: none;
 }
 
@@ -648,6 +648,7 @@ main{
 .works-img{
     display: inline-block;
     vertical-align: middle;
+    width: 30%;
 }
 
 .works-work-title{
@@ -661,11 +662,12 @@ main{
 
 .works-desc{
     vertical-align: middle;
-    display: inline-block;
     width: 50%;
-    margin-top: 2em;
-    margin-left: -8.3em;
+    margin-top: 4em;
+    display: inline-block;
+    left: 37%;
     text-align: left;
+    position: absolute;
     font-size: 0.8em;
     line-height: 19px;
     letter-spacing: 0.085em;
@@ -676,11 +678,11 @@ main{
     color: transparent;
     fill: none;
     rotate: -90deg;
-    position: absolute;
+    position:absolute;
     font-size: 1.3em;
-    top: 5.25em;
     right: 3em;
     letter-spacing: 0.2em;
+    margin-top: -2.8em;
     font-family: 'drukwide';
     -webkit-text-stroke: 0.7px rgb(255, 255, 255);
 }
