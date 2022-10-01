@@ -160,20 +160,20 @@ window.mobileAndTabletCheck = function() {
 window.mobileAndTabletCheck()
 
 
-$("#audiocntrl").click(function(){
-  if (document.getElementById("audiocntrl").innerHTML === '<svg class="controlbtn-vector" width="30" height="30" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.0196 17.3184H14.8767L26.3053 5.88983V42.4613L14.8767 31.0327H8.0196C6.75724 31.0327 5.73389 30.0093 5.73389 28.747V19.6041C5.73389 18.3418 6.75724 17.3184 8.0196 17.3184Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M30.877 19.6041L40.0198 28.747" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M30.8767 28.747L40.0195 19.6041L30.8767 28.747Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>'){
+$(".audiocntrl").click(function(){
+  if (document.querySelector(".audiocntrl").innerHTML === '<svg class="controlbtn-vector" width="30" height="30" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.0196 17.3184H14.8767L26.3053 5.88983V42.4613L14.8767 31.0327H8.0196C6.75724 31.0327 5.73389 30.0093 5.73389 28.747V19.6041C5.73389 18.3418 6.75724 17.3184 8.0196 17.3184Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M30.877 19.6041L40.0198 28.747" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M30.8767 28.747L40.0195 19.6041L30.8767 28.747Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>'){
     console.log("noted")
     audonload = new Audio("/resources/audio/onload.wav")
     audtransition = new Audio("/resources/audio/transition.wav")
     audhover = new Audio("/resources/audio/hover.mp3")
-    document.getElementById("audiocntrl").innerHTML = '<svg class="controlbtn-vector" width="30" height="30" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.9314 35.9475C36.979 33.6618 38.5029 29.8523 38.5029 24.5189C38.5029 19.1856 36.979 15.3761 33.9314 13.0904M11.0743 17.6618H17.9314L29.36 6.23322V42.8046L17.9314 31.3761H11.0743C9.81192 31.3761 8.78857 30.3527 8.78857 29.0904V19.9475C8.78857 18.6851 9.81192 17.6618 11.0743 17.6618Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M33.9316 19.9475V29.0904" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+    document.querySelector(".audiocntrl").innerHTML = '<svg class="controlbtn-vector" width="30" height="30" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.9314 35.9475C36.979 33.6618 38.5029 29.8523 38.5029 24.5189C38.5029 19.1856 36.979 15.3761 33.9314 13.0904M11.0743 17.6618H17.9314L29.36 6.23322V42.8046L17.9314 31.3761H11.0743C9.81192 31.3761 8.78857 30.3527 8.78857 29.0904V19.9475C8.78857 18.6851 9.81192 17.6618 11.0743 17.6618Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M33.9316 19.9475V29.0904" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
   }
   else{
-    document.getElementById("audiocntrl").innerHTML = '<svg class="controlbtn-vector" width="30" height="30" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.0196 17.3184H14.8767L26.3053 5.88983V42.4613L14.8767 31.0327H8.0196C6.75724 31.0327 5.73389 30.0093 5.73389 28.747V19.6041C5.73389 18.3418 6.75724 17.3184 8.0196 17.3184Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M30.877 19.6041L40.0198 28.747" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.8767 28.747L40.0195 19.6041L30.8767 28.747Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+    document.querySelector(".audiocntrl").innerHTML = '<svg class="controlbtn-vector" width="30" height="30" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.0196 17.3184H14.8767L26.3053 5.88983V42.4613L14.8767 31.0327H8.0196C6.75724 31.0327 5.73389 30.0093 5.73389 28.747V19.6041C5.73389 18.3418 6.75724 17.3184 8.0196 17.3184Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M30.877 19.6041L40.0198 28.747" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.8767 28.747L40.0195 19.6041L30.8767 28.747Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
     audonload = ""
     audtransition = ""
     audhover = ""
-    console.log(document.getElementById("audiocntrl").innerHTML)
+    console.log(document.querySelector(".audiocntrl").innerHTML)
   }
 })
 
@@ -189,4 +189,6 @@ var darkMode = function darkMode(){
   document.querySelector("#abcd").innerHTML = '<path d="M23.911 6.62829L22.3116 7.88749L15.5016 12.9872L8.6915 7.83712L7.09207 6.57793C6.71528 6.26381 6.25531 6.068 5.76916 6.01475C5.28301 5.9615 4.79203 6.05315 4.35707 6.27834C3.9221 6.50354 3.56225 6.85238 3.3221 7.28166C3.08196 7.71094 2.97206 8.20178 3.00604 8.69338V23.2875C3.00604 23.7417 3.18508 24.1773 3.50378 24.4984C3.82248 24.8196 4.25472 25 4.70543 25H8.6915V15.279L15.5016 20.4291L22.3116 15.279V25H26.2977C26.7484 25 27.1806 24.8196 27.4993 24.4984C27.818 24.1773 27.9971 23.7417 27.9971 23.2875V8.69338C28.0205 8.20602 27.903 7.72229 27.6587 7.30099C27.4145 6.87968 27.0541 6.53895 26.6213 6.32021C26.1884 6.10146 25.7019 6.01413 25.2208 6.06882C24.7396 6.12352 24.2846 6.31788 23.911 6.62829V6.62829Z" fill="white"/>'
 }
 
+
+$
 darkMode();
