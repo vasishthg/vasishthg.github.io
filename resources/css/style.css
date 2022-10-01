@@ -715,6 +715,9 @@ main{
     #men{
         display:inline !important;
     }
+    #desktopnavbtns{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px){
