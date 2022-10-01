@@ -38,7 +38,7 @@ function onMouseMove(e) {
 
 // Hover an element
 function onMouseHover() {
-  // audhover.play()
+  audhover.play()
   TweenMax.to($bigBall, .3, {
     scale: 2
   })
