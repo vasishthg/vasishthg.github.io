@@ -1074,3 +1074,43 @@ main{
     top: 50%;
 }
  */
+
+ .nav-btns{
+    vertical-align: middle;
+    padding-top: 0.4em;
+    margin-right: 2em;
+    position: absolute;
+    top: 5em;
+    right: 1em;
+    /* transform: translateX(-50%); */
+    z-index: 10;
+ }
+
+ .controlbtn{
+    width: 3.5em;
+    border: none;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 3.5em;
+    position: relative;
+    box-shadow: 0 1.5rem 2.5rem 0 rgba(4, 12, 33, 0.334);
+    transition: transform .5s ease-out,box-shadow .5s ease;
+    transition-property: transform, box-shadow;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-out, ease;
+    transition-delay: 0s, 0s;
+    margin-right: 2em;
+}
+
+.controlbtn:hover{
+    box-shadow: 0 1.5rem 2rem 0 #040c2191;
+    transform: translateY(-0.25em);
+}
+
+.controlbtn-vector{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

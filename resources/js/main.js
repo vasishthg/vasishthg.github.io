@@ -18,6 +18,9 @@ for (let i = 0; i < $hoverables.length; i++) {
   $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
 }
 
+// var audonload = new Audio("/resources/audio/onload.wav")
+// var audtransition = new Audio("/resources/audio/transition.wav")
+// var audhover = new Audio("/resources/audio/hover.mp3")
 
 // Move the cursor
 function onMouseMove(e) {
@@ -35,6 +38,7 @@ function onMouseMove(e) {
 
 // Hover an element
 function onMouseHover() {
+  // audhover.play()
   TweenMax.to($bigBall, .3, {
     scale: 2
   })
@@ -49,34 +53,38 @@ var header = document.querySelector("title")
 
 $(".to-forte").click(function(){
   header.innerHTML = "VasishthG - Forté";
-  $(".forte").show("slide", {direction: "up"}, 1000)
-  $(".works").hide("slide", {direction: "left"}, 1000)
+  $(".forte").show("slide", {direction: "up"}, 2000)
+  $(".works").hide("slide", {direction: "left"}, 2000)
   closemobnav();
-  $(".contact").hide("slide", {direction: "right"}, 1000)
+  $(".contact").hide("slide", {direction: "right"}, 2000)
+  audtransition.play()
 })
 
 $(".to-contact").click(function(){
   header.innerHTML = "VasishthG - Contact";
-  $(".contact").show("slide", {direction: "up"}, 1000)
-  $(".works").hide("slide", {direction: "left"}, 1000)
+  $(".contact").show("slide", {direction: "up"}, 2000)
+  $(".works").hide("slide", {direction: "left"}, 2000)
   closemobnav();
-  $(".forte").hide("slide", {direction: "left"}, 1000)
+  $(".forte").hide("slide", {direction: "left"}, 2000)
+  audtransition.play()
 })
 
 $(".to-home").click(function(){
   header.innerHTML = "VasishthG";
-  $(".contact").hide("slide", {direction: "up"}, 1000)
-  $(".forte").hide("slide", {direction: "left"}, 1000)
+  $(".contact").hide("slide", {direction: "up"}, 2000)
+  $(".forte").hide("slide", {direction: "left"}, 2000)
   closemobnav();
-  $(".works").hide("slide", {direction: "left"}, 1000)
+  $(".works").hide("slide", {direction: "left"}, 2000)
+  audtransition.play()
 })
 
 $(".to-works").click(function(){
   header.innerHTML = "VasishthG- Works";
-  $(".contact").hide("slide", {direction: "up"}, 1000)
-  $(".forte").hide("slide", {direction: "left"}, 1000)
+  $(".contact").hide("slide", {direction: "up"}, 2000)
+  $(".forte").hide("slide", {direction: "left"}, 2000)
   closemobnav();
-  $(".works").show("slide", {direction: "right"}, 1000)
+  $(".works").show("slide", {direction: "right"}, 2000)
+  audtransition.play()
 })
 
 var mentxt = document.getElementById('men')
@@ -128,6 +136,7 @@ $(".to-github").click(function(){
       ovrl.style.opacity = 0;
       setTimeout(function(){ 
         ovrl.style.display = "none";
+        audonload.play()
       }, 1200);
     }
     for(var i=0; i<tot; i++) {
