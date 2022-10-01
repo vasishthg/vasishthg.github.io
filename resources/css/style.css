@@ -359,8 +359,7 @@ main{
 }
 
 .forte{
-    width: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     padding-top: 3.5em;
@@ -497,14 +496,13 @@ main{
     vertical-align: middle;
     font-weight: 500;
     font-family: 'Lato';
+    margin-top: -0em;
     letter-spacing: 0.04em;
 }
 
 .contact{
-    width: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
-    height: 100%;
     top: 0;
     padding-top: 3.5em;
     right: 0;
@@ -940,6 +938,6 @@ main{
     text-align:center;
     color:transparent;
     fill: none;
-    -webkit-text-stroke: 2.6px black;
+    -webkit-text-stroke: 1.6px black;
 
   }
