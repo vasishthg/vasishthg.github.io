@@ -1037,7 +1037,7 @@ main{
 @media screen and (max-width:900px) {
     #works-head{
         position: relative;
-        rotate: 0turn;
+        rotate: 0deg !important;
         top: 1.5em;
         display: block;
         right: 0;
