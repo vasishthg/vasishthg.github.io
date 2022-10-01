@@ -107,7 +107,7 @@ $(".to-github").click(function(){
   window.open("https://github.com/vasishthg")
 })
 
-(function(){
+;(function(){
   function id(v){ return document.getElementById(v); }
   function loadbar() {
     var ovrl = id("overlay"),
