@@ -843,13 +843,13 @@ main{
     }
     @keyframes fortehead {
         0%{
-            left: 25%;
+            left: 23%;
         }
         50%{
-            left: 63%;
+            left: 64%;
         }
         100%{
-            left: 25%;
+            left: 23%;
         }
     }
     #forte-desc{
@@ -891,7 +891,7 @@ main{
     width: 100%;
     height: 100%;
     background-color: white;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
