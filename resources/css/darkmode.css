@@ -50,6 +50,7 @@ body{
     background: url("/resources/darkbg.png");
     background-color: #0a0a0a;
     font-family: 'gilroy-400';
+    color: white;
     min-height: 100%;
     height: 97vh;
     overflow: auto;
