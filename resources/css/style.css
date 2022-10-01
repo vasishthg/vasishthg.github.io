@@ -918,3 +918,28 @@ main{
     float: right;
     display: none;
 }
+#overlay{
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgb(255, 255, 255);
+    transition: 1s 0.4s;
+  }
+
+  #progstat{
+    letter-spacing: 3px;
+    position:absolute;
+    top:50%;
+    margin-top:-40px;
+    width:100%;
+    font-size: 3em;
+    font-family: 'drukwide';
+    text-align:center;
+    color:transparent;
+    fill: none;
+    -webkit-text-stroke: 2.6px black;
+
+  }
