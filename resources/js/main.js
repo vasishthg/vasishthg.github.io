@@ -71,8 +71,7 @@ $(".to-home").click(function(){
 })
 
 $(".to-works").click(function(){
-  alert("coming soon!")
-  // header.innerHTML = "VasishthG- Works";
+  header.innerHTML = "VasishthG- Works";
   $(".contact").hide("slide", {direction: "up"}, 1000)
   $(".forte").hide("slide", {direction: "left"}, 1000)
   closemobnav();

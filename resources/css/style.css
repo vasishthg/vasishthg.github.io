@@ -939,5 +939,137 @@ main{
     color:transparent;
     fill: none;
     -webkit-text-stroke: 1.6px black;
-
   }
+
+
+.works{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-top:2em;
+    top: 0;
+    background-color: #f3f3f3;
+    display: none;
+    bottom: 0;
+}
+
+#works-head{
+    font-family: 'drukwide';
+    position: fixed;
+    right: -1.5em;
+    font-size: 3em;
+    rotate: 0.25turn;
+    margin-block-start: 0;
+    color: #D1D1D1;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.works-main{
+    margin-top: 10%;
+    overflow-y: auto;
+    max-height: 30em;
+}
+
+.work{
+    color: white;
+    border-radius: 0.7em;
+    width: 60%;
+    margin-bottom: 2em;
+    display: inline-flex;
+    min-height: 9em;
+    background-color: #111111;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+}
+
+.work-img{
+    float: left;
+    margin-left: 1em;
+    vertical-align: top;
+    
+    display: inline;
+}
+
+.work-info{
+    float: left;
+    margin-left: 2em;
+    width: 60%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.work-title{
+    font-family: 'gilroy-600';
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.work-year{
+    color: transparent;
+    fill: none;
+    position: relative;
+    float: right;
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
+    font-family: 'drukwide';
+    display: inline;
+    margin-top: -1em;
+    -webkit-text-stroke: 0.7px rgb(255, 255, 255);
+}
+
+.work-link{
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+@media screen and (max-width:900px) {
+    #works-head{
+        position: relative;
+        rotate: 0turn;
+        top: 1.5em;
+        display: block;
+        right: 0;
+        transform: translateY(0);
+        margin-left: 1em;
+        margin-bottom: 3em;
+    }
+
+    .work{
+        display: block;
+        height: 23em;
+        width: 80%;
+        float: auto;
+    }
+    .work-img{
+        float: none;
+    }
+    .work-info{
+        float:none;
+        margin-right: 2em;
+        width: 90%;
+    }
+    .work-year{
+        padding-top: 3em;
+        float: right;
+    }
+    #rember{
+        position: absolute;
+        top: 8em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* 
+#works-head{
+    font-family: 'drukwide';
+    position: fixed;
+    right: -1.5em;
+    font-size: 3em;
+    rotate: 0.25turn;
+    margin-block-start: 0;
+    color: #D1D1D1;
+    transform: translateY(-50%);
+    top: 50%;
+}
+ */
