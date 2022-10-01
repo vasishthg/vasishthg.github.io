@@ -24,8 +24,9 @@ function onMouseMove(e) {
     TweenMax.to($bigBall, .4, {
       x: e.clientX - 15,
       y: e.clientY - 15
-      
+
     })
+    $(".cursor").css("display", "block")
   TweenMax.to($smallBall, .1, {
     x: e.clientX - 5,
     y: e.clientY - 5

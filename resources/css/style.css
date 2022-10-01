@@ -141,6 +141,7 @@ html{
 /* Cursor */
 .cursor {
     pointer-events: none;
+    display: none;
   }
   .cursor__ball {
     position: fixed;
